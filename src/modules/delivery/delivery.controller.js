@@ -5,7 +5,7 @@ import HTTPStatus from "http-status";
 export async function createDelivery(req,res) {
     try{
         console.log(req.body);
-        console.log(delivery);
+        //console.log(delivery);
         const delivery = await Delivery.create(req.body);
         console.log("aa");
         return res.status(HTTPStatus.CREATED).json(delivery);
