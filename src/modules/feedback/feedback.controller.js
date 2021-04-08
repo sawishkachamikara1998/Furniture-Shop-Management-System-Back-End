@@ -10,6 +10,6 @@ export async function createfeedback(req, res) {
     } catch (e) {
         const errorArray = [];
         errorArray.push({ status, e })
-        return res.status(HTTPStatus.BAD_REQUEST).json(errorArray);
+        return res.status(HTTPStatus.OK).json(errorArray);
     }
 }
