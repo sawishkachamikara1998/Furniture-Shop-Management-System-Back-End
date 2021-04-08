@@ -6,7 +6,7 @@ import deliveryRoutes from "./delivery/delivery.routes";
 import orderRoutes from "./order/order.routes";
 import feedbackRoutes from "./feedback/feedback.routes";
 import cartRoutes from "./cart/cart.routes";
-import wishlistRoutes from "./products/wishlist.routes";
+import wishlistRoutes from "./wishlist/wishlist.routes";
 import stockRoutes from "./stock/stock.routes";
 
 export default (app) => {
