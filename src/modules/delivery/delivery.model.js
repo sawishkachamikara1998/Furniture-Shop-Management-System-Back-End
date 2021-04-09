@@ -37,7 +37,7 @@ DeliverySchema.methods = {
       e: {
           errors: null
       },
-      name: this.name,
+      customerName: this.customerName,
       code: this.code,
     };
   },

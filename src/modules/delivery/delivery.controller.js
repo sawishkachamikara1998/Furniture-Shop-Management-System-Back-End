@@ -15,11 +15,11 @@ export async function createDelivery(req,res) {
         return res.status(HTTPStatus.BAD_REQUEST).json(errorArray);
     }   
 }
-/*
-export async function getAllProducts(req, res) {
+
+export async function getAllDeliveryItems(req, res) {
     try{
-        const products = await Product.find({});
-        return res.status(HTTPStatus.CREATED).json(products);
+        const delivery = await Delivery.find({});
+        return res.status(HTTPStatus.CREATED).json(delivery);
     }catch(e){
         const errorArray = [];
         errorArray.push({status:false, e})
@@ -28,11 +28,12 @@ export async function getAllProducts(req, res) {
     
 }
 
-export async function getProductById(req, res) {
+
+export async function getAllDeliveryItemsById(req, res) {
     try{
         console.log(req.params.id)
-        const product = await Product.findOne({code: req.params.id});
-        return res.status(HTTPStatus.CREATED).json(product);
+        const delivery = await Delivery.findOne({code: req.params.id});
+        return res.status(HTTPStatus.CREATED).json(delivery);
 
     }catch(e){
         const errorArray = [];
@@ -40,5 +41,5 @@ export async function getProductById(req, res) {
         return res.status(HTTPStatus.BAD_REQUEST).json(errorArray);
     }
 }
-*/
+
 

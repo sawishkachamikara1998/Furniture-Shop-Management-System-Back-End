@@ -11,17 +11,17 @@ routes.post(
   "/create",
   deliveryController.createDelivery
 );
-/*
+
 routes.get(
     "/getAll",
-    deliveryController.getAllProducts
+    deliveryController.getAllDeliveryItems
 );
 
 routes.get(
     "/:id",
-    deliveryController.getProductById
+    deliveryController.getAllDeliveryItemsById
 );
-*/
+
 
 
 export default routes;
